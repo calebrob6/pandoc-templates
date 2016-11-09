@@ -1,4 +1,18 @@
 \documentclass[$if(fontsize)$$fontsize$,$endif$$if(lang)$$babel-lang$,$endif$$if(papersize)$$papersize$paper,$endif$$for(classoption)$$classoption$$sep$,$endfor$]{$documentclass$}
+
+\usepackage{enumitem}
+\setlistdepth{9}
+\setlist[itemize,1]{label={--}}
+\setlist[itemize,2]{label={\textbullet}}
+\setlist[itemize,3]{label={\textendash}}
+\setlist[itemize,4]{label={\textasteriskcentered}}
+\setlist[itemize,5]{label={\textperiodcentered}}
+\setlist[itemize,6]{label={--}}
+\setlist[itemize,7]{label={\textbullet}}
+\setlist[itemize,8]{label={\textendash}}
+\setlist[itemize,9]{label={\textasteriskcentered}}
+\renewlist{itemize}{itemize}{9}
+
 $if(beamerarticle)$
 \usepackage{beamerarticle} % needs to be loaded first
 $endif$
